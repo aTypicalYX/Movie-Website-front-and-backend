@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Cybersecurity home page">
+  <meta name="keywords" content="Movies, streaming, SPmovies, SPMovies, new movies">
+
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!--Font-awesome link-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>SPMovies Login</title>
+</head>
+
+<body>
+
+  <!--------------------- Navigation -------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">SPMovies</a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="../home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../genres.html">Genres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <button class="btnLogout btn btn-lg btn-block" type="submit">Logout</button>
+          </li>
+        </ul>
+        <!-- <span class="navbar-text">
+          Navbar text with an inline element
+        </span> -->
+      </div>
+
+
+
+    </div>
+  </nav>
+
+
+  <!------------------------------Background img-------------------------->
+
+
+  <header class="big-banner">
+    <div class="container h-100 text-light">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <div class="col-md-12 mb-4 text-center wow fadeIn">
+            <h3 class="display-3 mb-0 pt-md-5 pt-5" style=" text-shadow: 2px 2px 4px #000000">SPMovies</h3>
+            <hr class="hr-light my-4 w-75">
+            <h3 class="subtext-header mt-2 mb-4 " style=" text-shadow: 2px 2px 4px #000000">Watch the latests movies
+              here</h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!---------------------------Opening tag line and description----------------------->
+
+  <div class="jumbotron jumbotron-fluid bg-white">
+    <div class="container" id="aboutCommunity">
+      <h1 class="text-center mb-4 pb-2">Login page</h1>
+      <p class="text-center lead grey-text mx-auto mb-5">Get started with an SPMovies account or log in to your account
+        here !</p>
+    </div>
+  </div>
+
+
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card shadow-2-strong" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center" >
+            <h3 class="mb-5">Sign in</h3>
+
+
+            <form id="login-form" method="post">
+              <div class="form-group">
+                <input type="text" id="username" class="form-control form-control-lg" />
+                <label class="form-label" for="username">Username</label>
+              </div>
+
+              <div class="form-group">
+                <input type="password" id="password" class="form-control form-control-lg" />
+                <label class="form-label" for="password">Password</label>
+              </div>
+
+             
+              <div class="form-check d-flex justify-content-start mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                <label class="form-check-label" for="form1Example3"> Remember password </label>
+              </div>
+
+              <button class="btnLogin btn-primary btn-lg btn-block" type="submit">Login</button>
+
+              <hr class="my-4">
+
+              <button class="btnLogin btn-lg btn-block btn-primary" style="background-color: #dd4b39;" type="submit"><i
+                  class="fab fa-google me-2"></i> Sign in with google</button>
+              <button class="btnLogin btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
+                type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+              <a class="small text-muted" href="#!">Forgot password?</a>
+
+              <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="register.html"
+                  style="color: #2873ff;">Register here</a></p>
+
+              <a href="#!" class="small text-muted">Terms of use.</a>
+              <a href="#!" class="small text-muted">Privacy policy</a>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="loginTest">
+
+  </div>
+
+
+
+
+
+
+
+  <!--------------------------------Footer----------------------------------->
+  <footer class="page-footer font-small bg-light text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+            <div class="middle">
+              <a class="btnFoot" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btnFoot" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="btnFoot" href="#">
+                <i class="fab fa-google"></i>
+              </a>
+              <a class="btnFoot" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script>
+    const baseUrl = "http://localhost:8081";
+
+    $("#login-form").submit((event) => {
+      // prevent page reload
+      event.preventDefault();
+
+      const username = $("#username").val();
+      const password = $("#password").val();
+      const requestBody = {
+        username: username,
+        password: password
+      };
+
+
+      
+      axios.post(`${baseUrl}/login/`, requestBody)
+        .then((response) => {
+          const token = response.data.token;
+          const loggedInUserID = response.data.user_id;
+          const userType = response.data.user_type;
+
+          console.log("User has reached front end login")
+          console.log(response.data.token)
+          console.log(response.data.user_id)
+          console.log(response.data.user_type)
+
+          localStorage.setItem("token", token);
+          localStorage.setItem("loggedInUserID", loggedInUserID);
+          console.log(localStorage)
+          const postHtml = `
+          
+                  <p>${localStorage}</p>
+              
+                  `;
+
+          $("#loginTest").append(postHtml);
+          console.log(localStorage)
+
+          if (response.data.user_type === "Admin") {
+            window.location.href = "/admin";
+          }
+          else {
+            window.location.href = "/home";
+          }
+
+
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("Sorry, your username or password is incorrect")
+        });
+    });
+
+    $(document).on("click", ".btnLogout", function () {
+      // clear local storage if logged out
+      localStorage.clear();
+      // change button to login 
+      const loginHtml = `<a class="nav-link" href="../login.html">Login</a>`
+      $(this).replaceWith(loginHtml);
+      console.log("here");
+      window.location.href = "/home";
+
+    });
+
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>

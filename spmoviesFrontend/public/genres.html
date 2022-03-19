@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bad Internet habits">
+  <meta name="keywords" content="Movies, streaming, SPmovies, SPMovies, new movies">
+  <title>Movie Genres</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!--Font-awesome link-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+  <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+
+  <!--------------------- Navigation -------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">SPMovies</a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="../home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../genres.html">Genres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html">Login</a>
+          </li>
+        </ul>
+        <!-- <span class="navbar-text">
+            Navbar text with an inline element
+          </span> -->
+      </div>
+
+
+    
+    </div>
+  </nav>
+
+
+  <!------------------------------Background img-------------------------->
+
+
+
+  <header class="big-banner">
+    <div class="container h-100 text-light">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <div class="col-md-12 mb-4 text-center wow fadeIn">
+            <h3 class="display-3 mb-0 pt-md-5 pt-5" style=" text-shadow: 2px 2px 4px #000000">SPMovies</h3>
+            <hr class="hr-light my-4 w-75">
+            <h3 class="subtext-header mt-2 mb-4 " style=" text-shadow: 2px 2px 4px #000000">Watch the latests movies
+              here</h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!---------------------------Opening tag line and description----------------------->
+
+  <div class="jumbotron jumbotron-fluid bg-white" id="aboutCyberJumbo">
+    <div class="container" id="aboutCyber">
+      <h2>Welcome</h2>
+      <p>We contain just about every movie both latest releases and older classics !</p>
+    </div>
+  </div>
+
+
+
+
+
+  <section id="reasonsWhy">
+
+    <h2>Movie Genres</h2>
+    <p class="lead">SPMovies offers a wide range of different movie genres for you to choose. From action-packed movies
+      to watch with your friends, to fun family movies to watch with your kids, SPMovies has it all.</p>
+    <p class="lead">Here are the current movie genres available:</p>
+    <div id="movieGenres">
+
+
+    </div>
+  </section>
+
+
+  <!--------------------------------Footer----------------------------------->
+  <footer class="page-footer font-small bg-light text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+            <div class="middle">
+              <a class="btnFoot" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btnFoot" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="btnFoot" href="#">
+                <i class="fab fa-google"></i>
+              </a>
+              <a class="btnFoot" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script>
+    // your JS code goes here.
+
+    // API url
+    const baseUrl = "http://localhost:8081";
+    const clientSideUrl = "http://localhost:3001"
+
+    const token = localStorage.getItem("token");
+
+    let movies;
+
+    axios.get(`${baseUrl}/genres/`)
+      .then((response) => {
+        const genres = response.data;
+        console.log(genres)
+        genres.forEach((post) => {
+          const genresDetailsSection = `
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action flex-column align-items-start ">
+              <div class="w-100 ">
+                <p>${post.genreid}</p>
+                <h2>${post.genre}</h2>
+                <h5>${post.description}</h5>
+                <a href="${clientSideUrl}/moviesGenre/${post.genreid}"><button class="btnGenre btn-primary btn-lg " type="text">Learn More</button></a>
+
+              </div>
+            </a>
+          </div>
+          `;
+          console.log(genres)
+          $("#movieGenres").append(genresDetailsSection);
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>

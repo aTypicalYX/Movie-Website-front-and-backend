@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bad Internet habits">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Movies, streaming, SPmovies, SPMovies, new movies">
+  <title>Movie Details</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!--Font-awesome link-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    div#movieReviews {
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+
+    div#averageRating {
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!--------------------- Navigation -------------------------------->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../home.html">SPMovies</a>
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="../home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../genres.html">Genres</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../login.html">Login</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+
+    </div>
+  </nav>
+
+
+
+  <!------------------------------Background img-------------------------->
+
+  <header class="big-banner">
+    <div class="container h-100 text-light">
+      <div class="row h-100 align-items-center">
+        <div class="col-12 text-center">
+          <div class="col-md-12 mb-4 text-center wow fadeIn">
+            <h3 class="display-3 mb-0 pt-md-5 pt-5" style=" text-shadow: 2px 2px 4px #000000">SPMovies</h3>
+            <hr class="hr-light my-4 w-75">
+            <h3 class="subtext-header mt-2 mb-4 " style=" text-shadow: 2px 2px 4px #000000">Watch the latests movies
+              here</h3>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container-fluid bg-light my-4" style="padding-bottom: 3%; ">
+    
+    <section style="margin:0%" id="movieDetailsHere">
+
+    </section>
+
+    <hr>
+
+    <div id="averageRating">
+      <h2>Rating</h2>
+
+    </div>
+
+    <div id="movieReviews">
+
+
+      <h2>Reviews</h2>
+
+    </div>
+
+
+    <hr>
+
+    <div style="margin-left: 25%; margin: right 25%;">
+      <h3>Leave a Review</h3>
+
+      <form id="review-Form" method="post">
+        <div class="form-group" style="margin-right:40%">
+          <label for="inputRating">Rating out of 10</label>
+          <input type="number" max="10" class="form-control" id="inputRating" placeholder="Enter Rating">
+        </div>
+
+        <div class="form-group" style="margin-right:40%">
+          <label for="inputReview">Review</label>
+          <textarea class="form-control" id="inputReview" rows="3" placeholder="Max 45 words"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+  <!--------------------------------Footer----------------------------------->
+  <footer class="page-footer font-small bg-light text-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+            <div class="middle">
+              <a class="btnFoot" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="btnFoot" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="btnFoot" href="#">
+                <i class="fab fa-google"></i>
+              </a>
+              <a class="btnFoot" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script>
+    const baseUrl = "http://localhost:8081";
+    const clientSideUrl = "http://localhost:3001"
+
+    const token = localStorage.getItem("token");
+
+    const url = window.location.toString();
+    //alert(url);
+    const movieID = parseInt(url.split("/").slice(-1)[0]);
+
+    axios.get(`${baseUrl}/moviesID/${movieID}/`)
+      .then((response) => {
+
+        const movies = response.data;
+        console.log("Got to this section")
+        //console.log(movies)
+        movies.forEach((post) => {
+          const movieDetailsSection = `
+        
+
+
+          <h3 class="text-center font-weight-bold mb-4 pb-2">${post.title}</h2>
+
+          
+          <hr>
+          <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img style="-webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);" class="card-img-top mb-5 mb-md-0" src="../images/${post.picture}" alt="..." /></div>
+                <div class="col-md-6">
+                  <h3>Cast</h3>
+                    <p class="lead">${post.cast}</p>
+                    <h3>Time</h3>
+                    <p class="lead">${post.time}</p>
+                    <h3>Genre</h3>
+                    <p class="lead">${post.genre}</p>
+                    
+                    <h3>Opening Date</h3>
+                    <p class="lead">${post.opening_date}</p>
+                    <h3>Synopsis</h3>
+                    <p class="lead">${post.description}</p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+              `;
+
+          $("#movieDetailsHere").append(movieDetailsSection);
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+
+    axios.get(`${baseUrl}/reviews/${movieID}/`)
+      .then((response) => {
+        const posts = response.data;
+        if (posts.rating === null) {
+          const postHtml = `
+          <h5 class="card-title">Movie does not have a review yet</h5>
+          
+            `;
+          $("#averageRating").append(postHtml);
+
+        }
+
+        posts.forEach((post) => {
+          const postHtml = `
+
+        
+            <h5 class="card-title">${post.username}</h5>
+            <p class="lead">Rated it ${post.rating} out of 10</p>
+            <p class="card-text">${post.review}</p>
+          <p class="card-text">Review created at ${post.created_at}</p>
+          </div>
+        </div>
+              `;
+
+
+          $("#movieReviews").append(postHtml);
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+
+
+    axios.get(`${baseUrl}/movieRating/${movieID}/`)
+      .then((response) => {
+        const posts = response.data;
+        console.log(posts.avg_rating)
+        if (posts.avg_rating === null) {
+          const postHtml = `
+          <h5 class="card-title">Movie has no rating yet</h5>
+          
+            `;
+          $("#averageRating").append(postHtml);
+
+
+        }
+        else {
+
+          const postHtml = `
+        <h5 class="card-title">Rated ${posts.avg_rating} out of 10 </h5>
+        
+          `;
+          $("#averageRating").append(postHtml);
+        }
+      })
+
+      .catch((error) => {
+        console.log(error);
+      });
+
+
+
+    $("#review-Form").submit((event) => {
+      // prevent page reload
+      event.preventDefault();
+
+      const movieID = parseInt(url.split("/").slice(-1)[0]);
+      const loggedInUserID = parseInt(localStorage.getItem("loggedInUserID"));
+      const inputRating = $("#inputRating").val();
+      const inputReview = $("#inputReview").val();
+
+      if (loggedInUserID == null || typeof loggedInUserID == "undefined") {
+        alert("Sorry, you are not logged it yet")
+        window.location.reload();
+
+      }
+      const requestBody = {
+        movieid: movieID,
+        userid: loggedInUserID,
+        rating: inputRating,
+        review: inputReview
+      };
+
+      axios.post(`${baseUrl}/reviews/`, requestBody)
+        .then((response) => {
+          alert("Review Posted")
+
+          window.location.reload();
+        })
+        .catch((error) => {
+          console.log(error);
+          alert("Sorry, you are not logged in yet.")
+        });
+    });
+
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>
