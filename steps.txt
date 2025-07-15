@@ -1,0 +1,16 @@
+To set up spmovies folder in vscode workspace
+
+1. Download and unzip the folder to your local drive
+2. Open the spmovies folder in Visual Studio Code
+3. Ensure that both front end and back end folders are open in integrated terminal
+4. Type 'npm run start-dev' in both terminals to start both servers
+5. Browse to http://localhost:3001
+
+
+
+To load the mysql database on mysql
+
+1.Go go mysql workbench, copy the mysql file from the spmovies folder and drop it
+in a query tab. Run the tab.
+2.Right click schema page > Refresh all
+3.Make sure new schema is added
