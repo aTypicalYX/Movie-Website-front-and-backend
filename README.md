@@ -5,6 +5,8 @@ This is the repository for the movie website front and back end that our group c
 The website uses JSON web tokens and Axios for the server backend, for the database, it uses MySQL. As such, you will have to make some changes to the file
 for it to use whatever database you want to use.
 
+The website also used JSON Web Tokens for basic authentication and authorization.
+
 A full documentation of how thw website works and its code can be found in the word document, but I have also included a short summary of it in the README on github.
 
 The home page consists of an API that supports the get all movies function. This will be loaded every time the user visits the  home page. This displays all the movies in the database.
